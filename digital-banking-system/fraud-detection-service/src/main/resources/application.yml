@@ -1,0 +1,57 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: fraud-detection-service
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      group-id: fraud-detection-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.banking.*"
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+fraud:
+  rules:
+    velocity:
+      max-transactions: 5
+      window-seconds: 60
+      risk-score: 35
+    unusual-amount:
+      multiplier-threshold: 3.0
+      risk-score: 30
+    balance-ratio:
+      threshold-percentage: 90.0
+      risk-score: 25
+    rapid-transaction:
+      window-seconds: 10
+      risk-score: 40
+  thresholds:
+    otp-required-score: 40
+    reject-score: 75
+  otp:
+    expiration-seconds: 300
+    max-attempts: 3
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
