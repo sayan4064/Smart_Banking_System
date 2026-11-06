@@ -12,6 +12,8 @@ export interface User {
 export interface AuthResponse {
   token: string;
   refreshToken?: string;
+  expiresIn?: number; // Duration in seconds (3600s = 1 hour)
+  expiresAt?: number; // Expiration timestamp in ms
   user: User;
   message?: string;
 }
