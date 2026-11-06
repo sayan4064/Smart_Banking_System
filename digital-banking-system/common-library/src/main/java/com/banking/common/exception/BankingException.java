@@ -17,5 +17,9 @@ public class BankingException extends RuntimeException {
     public BankingException(String message, String errorCode) {
         this(message, errorCode, 400);
     }
+
+    public BankingException(String message) {
+        this(message, "BANKING_ERROR", 400);
+    }
 }
 
