@@ -40,3 +40,4 @@ public class BalanceDrainFraudRule implements FraudRule {
         return 0;
     }
 }
+

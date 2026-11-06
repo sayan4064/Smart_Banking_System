@@ -69,3 +69,4 @@ public class Account {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 }
+

@@ -13,3 +13,4 @@ public interface AccountLedgerRepository extends JpaRepository<AccountLedger, Lo
 
     List<AccountLedger> findByTransactionReference(String transactionReference);
 }
+

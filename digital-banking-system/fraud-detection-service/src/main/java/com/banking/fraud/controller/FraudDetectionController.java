@@ -46,3 +46,4 @@ public class FraudDetectionController {
         return ResponseEntity.ok(ApiResponse.success(stats));
     }
 }
+

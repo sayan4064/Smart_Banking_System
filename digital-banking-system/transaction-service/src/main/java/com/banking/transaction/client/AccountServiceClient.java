@@ -36,3 +36,4 @@ public interface AccountServiceClient {
             String accountStatus
     ) {}
 }
+

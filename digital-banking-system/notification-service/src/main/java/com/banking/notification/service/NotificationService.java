@@ -14,3 +14,4 @@ public interface NotificationService {
 
     void markAllAsRead(String recipient);
 }
+

@@ -37,3 +37,4 @@ public class SagaStepLog {
     @Column(name = "timestamp", nullable = false, updatable = false)
     private LocalDateTime timestamp;
 }
+

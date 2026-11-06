@@ -31,3 +31,4 @@ public class FraudAlertRecord implements Serializable {
     private List<String> triggeredRules;
     private Instant evaluatedAt;
 }
+

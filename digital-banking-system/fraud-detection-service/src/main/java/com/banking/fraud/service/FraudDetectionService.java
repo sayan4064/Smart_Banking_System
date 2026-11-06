@@ -14,3 +14,4 @@ public interface FraudDetectionService {
 
     Map<String, Object> getStatistics();
 }
+

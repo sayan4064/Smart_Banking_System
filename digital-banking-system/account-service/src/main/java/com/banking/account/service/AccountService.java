@@ -28,3 +28,4 @@ public interface AccountService {
 
     List<LedgerEntryResponse> getAccountLedger(String accountNumber);
 }
+

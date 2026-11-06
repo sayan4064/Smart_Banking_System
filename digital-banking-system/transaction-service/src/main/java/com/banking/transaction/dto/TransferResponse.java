@@ -17,3 +17,4 @@ public class TransferResponse {
     private String message;
     private boolean requiresOtp;
 }
+

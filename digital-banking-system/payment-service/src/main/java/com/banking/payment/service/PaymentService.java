@@ -16,3 +16,4 @@ public interface PaymentService {
 
     List<PaymentOrderSummaryDto> getAccountPaymentHistory(String accountNumber);
 }
+

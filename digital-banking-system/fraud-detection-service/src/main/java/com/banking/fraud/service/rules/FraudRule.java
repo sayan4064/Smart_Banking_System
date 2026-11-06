@@ -10,3 +10,4 @@ public interface FraudRule {
 
     int evaluate(TransactionInitiatedEvent event, List<String> triggeredRules);
 }
+

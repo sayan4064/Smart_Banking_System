@@ -19,3 +19,4 @@ public class BalanceResponse {
     private String currency;
     private AccountStatus status;
 }
+

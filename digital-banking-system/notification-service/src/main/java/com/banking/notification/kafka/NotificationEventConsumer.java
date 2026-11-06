@@ -137,3 +137,4 @@ public class NotificationEventConsumer {
         notificationService.dispatch(item);
     }
 }
+

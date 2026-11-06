@@ -48,3 +48,4 @@ public class NotificationServiceImpl implements NotificationService {
                 .forEach(n -> n.setRead(true));
     }
 }
+

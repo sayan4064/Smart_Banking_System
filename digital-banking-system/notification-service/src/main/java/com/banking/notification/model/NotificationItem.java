@@ -27,3 +27,4 @@ public class NotificationItem implements Serializable {
     private Instant timestamp = Instant.now();
     private Map<String, Object> metadata;
 }
+

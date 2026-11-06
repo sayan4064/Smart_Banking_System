@@ -161,3 +161,4 @@ public class FraudDetectionServiceImpl implements FraudDetectionService {
         return stats;
     }
 }
+

@@ -24,6 +24,10 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 
+logging:
+  level:
+    org.apache.kafka: ERROR
+
 management:
   endpoints:
     web:

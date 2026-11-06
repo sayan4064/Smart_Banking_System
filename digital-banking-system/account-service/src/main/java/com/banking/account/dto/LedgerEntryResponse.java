@@ -24,3 +24,4 @@ public class LedgerEntryResponse {
     private String description;
     private LocalDateTime createdAt;
 }
+

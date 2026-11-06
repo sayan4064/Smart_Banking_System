@@ -22,3 +22,4 @@ public class PaymentOrderResponse {
     private String receipt;
     private String accountNumber;
 }
+

@@ -70,3 +70,4 @@ public class Transaction {
     @Column(name = "version")
     private Long version;
 }
+

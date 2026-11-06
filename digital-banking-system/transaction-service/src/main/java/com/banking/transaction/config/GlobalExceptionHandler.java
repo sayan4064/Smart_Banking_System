@@ -73,3 +73,4 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(ApiResponse.error("Internal transaction error: " + ex.getMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
+

@@ -11,3 +11,4 @@ public interface SagaStepLogRepository extends JpaRepository<SagaStepLog, Long> 
 
     List<SagaStepLog> findByTransactionReferenceOrderByTimestampAsc(String transactionReference);
 }
+

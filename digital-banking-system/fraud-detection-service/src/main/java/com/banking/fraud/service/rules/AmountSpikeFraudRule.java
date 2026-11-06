@@ -35,3 +35,4 @@ public class AmountSpikeFraudRule implements FraudRule {
         return 0;
     }
 }
+

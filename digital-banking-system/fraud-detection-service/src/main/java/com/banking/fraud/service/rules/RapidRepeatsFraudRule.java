@@ -42,3 +42,4 @@ public class RapidRepeatsFraudRule implements FraudRule {
         return 0;
     }
 }
+

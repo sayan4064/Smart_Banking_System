@@ -32,3 +32,4 @@ public class NewDeviceGeoFraudRule implements FraudRule {
         return 0;
     }
 }
+

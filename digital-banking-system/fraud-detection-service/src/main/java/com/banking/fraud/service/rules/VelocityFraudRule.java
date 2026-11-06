@@ -38,3 +38,4 @@ public class VelocityFraudRule implements FraudRule {
         return 0;
     }
 }
+

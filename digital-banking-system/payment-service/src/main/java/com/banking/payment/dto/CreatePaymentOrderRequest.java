@@ -29,3 +29,4 @@ public class CreatePaymentOrderRequest {
     private String receipt;
     private String notes;
 }
+

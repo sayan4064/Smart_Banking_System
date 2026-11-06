@@ -24,3 +24,4 @@ public class VerifyPaymentRequest {
     @NotBlank(message = "Account number is required")
     private String accountNumber;
 }
+
